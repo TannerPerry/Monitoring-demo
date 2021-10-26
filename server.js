@@ -24,7 +24,7 @@ app.post('/api/student', (req,res ) =>{
     name = name.trim()
     students.push(name)
     rollbar.log('student added successfully', {author: 'Tanner', type: 'manual entry'})
-    res.status(200).sendd(students)
+    res.status(200).send(students)
 
 })
 
